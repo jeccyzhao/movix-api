@@ -25,7 +25,7 @@ public class MovieController extends BaseController {
 
     @GetMapping
     @ResponseBody
-    public List<Movie> read(@RequestParam("title") String title) {
+    public List<Movie> find(@RequestParam("title") String title) {
         List<Movie> movies = service.findMovies(title);
         logger.debug("Find {} movies.", movies.size());
         return movies;

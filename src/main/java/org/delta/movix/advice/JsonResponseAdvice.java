@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice(basePackages = "org.delta.movix.controller")
-public class JsonResponseWrapper implements ResponseBodyAdvice {
+public class JsonResponseAdvice implements ResponseBodyAdvice {
 
     @Override
     public boolean supports(MethodParameter returnType, Class converterType) {
